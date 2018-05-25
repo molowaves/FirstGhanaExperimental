@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCognitive" targetNamespace="http://tempuri.org/dsCognitive.xsd" xmlns:mstns="http://tempuri.org/dsCognitive.xsd" xmlns="http://tempuri.org/dsCognitive.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCognitive" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCognitive" msprop:Generator_UserDSName="dsCognitive">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CognitiveDomain" msprop:Generator_TableClassName="CognitiveDomainDataTable" msprop:Generator_TableVarName="tableCognitiveDomain" msprop:Generator_TablePropName="CognitiveDomain" msprop:Generator_RowDeletingName="CognitiveDomainRowDeleting" msprop:Generator_UserTableName="CognitiveDomain" msprop:Generator_RowChangingName="CognitiveDomainRowChanging" msprop:Generator_RowEvHandlerName="CognitiveDomainRowChangeEventHandler" msprop:Generator_RowDeletedName="CognitiveDomainRowDeleted" msprop:Generator_RowEvArgName="CognitiveDomainRowChangeEvent" msprop:Generator_RowChangedName="CognitiveDomainRowChanged" msprop:Generator_RowClassName="CognitiveDomainRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirstCA" msprop:Generator_ColumnVarNameInTable="columnFirstCA" msprop:Generator_ColumnPropNameInRow="FirstCA" msprop:Generator_ColumnPropNameInTable="FirstCAColumn" msprop:Generator_UserColumnName="FirstCA" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondCA" msprop:Generator_ColumnVarNameInTable="columnSecondCA" msprop:Generator_ColumnPropNameInRow="SecondCA" msprop:Generator_ColumnPropNameInTable="SecondCAColumn" msprop:Generator_UserColumnName="SecondCA" type="xs:string" minOccurs="0" />
+              <xs:element name="ThirdCA" msprop:Generator_ColumnVarNameInTable="columnThirdCA" msprop:Generator_ColumnPropNameInRow="ThirdCA" msprop:Generator_ColumnPropNameInTable="ThirdCAColumn" msprop:Generator_UserColumnName="ThirdCA" type="xs:string" minOccurs="0" />
+              <xs:element name="Exam" msprop:Generator_ColumnVarNameInTable="columnExam" msprop:Generator_ColumnPropNameInRow="Exam" msprop:Generator_ColumnPropNameInTable="ExamColumn" msprop:Generator_UserColumnName="Exam" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalCA" msprop:Generator_ColumnVarNameInTable="columnTotalCA" msprop:Generator_ColumnPropNameInRow="TotalCA" msprop:Generator_ColumnPropNameInTable="TotalCAColumn" msprop:Generator_UserColumnName="TotalCA" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_UserColumnName="Grade" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" type="xs:string" minOccurs="0" />
+              <xs:element name="SubjectTitle" msprop:Generator_ColumnVarNameInTable="columnSubjectTitle" msprop:Generator_ColumnPropNameInRow="SubjectTitle" msprop:Generator_ColumnPropNameInTable="SubjectTitleColumn" msprop:Generator_UserColumnName="SubjectTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="Sn" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnSn" msprop:Generator_ColumnPropNameInRow="Sn" msprop:Generator_ColumnPropNameInTable="SnColumn" msprop:Generator_UserColumnName="Sn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

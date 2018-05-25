@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResultsCompDataSet" targetNamespace="http://tempuri.org/ResultsCompDataSet.xsd" xmlns:mstns="http://tempuri.org/ResultsCompDataSet.xsd" xmlns="http://tempuri.org/ResultsCompDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="constring" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="constring (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.constring.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ResultsCompDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ResultsCompDataSet" msprop:Generator_UserDSName="ResultsCompDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Students" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_TableVarName="tableStudents" msprop:Generator_TablePropName="Students" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_UserTableName="Students" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_RowEvArgName="StudentsRowChangeEvent" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_RowClassName="StudentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentId" msprop:Generator_ColumnVarNameInTable="columnStudentId" msprop:Generator_ColumnPropNameInRow="StudentId" msprop:Generator_ColumnPropNameInTable="StudentIdColumn" msprop:Generator_UserColumnName="StudentId">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="photoGuid" msprop:Generator_ColumnVarNameInTable="columnphotoGuid" msprop:Generator_ColumnPropNameInRow="photoGuid" msprop:Generator_ColumnPropNameInTable="photoGuidColumn" msprop:Generator_UserColumnName="photoGuid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Students" />
+      <xs:field xpath="mstns:StudentId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

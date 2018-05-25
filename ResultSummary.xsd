@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResultSummary" targetNamespace="http://tempuri.org/ResultSummary.xsd" xmlns:mstns="http://tempuri.org/ResultSummary.xsd" xmlns="http://tempuri.org/ResultSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ResultSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ResultSummary" msprop:Generator_UserDSName="ResultSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SummaryTable" msprop:Generator_TableClassName="SummaryTableDataTable" msprop:Generator_TableVarName="tableSummaryTable" msprop:Generator_TablePropName="SummaryTable" msprop:Generator_RowDeletingName="SummaryTableRowDeleting" msprop:Generator_UserTableName="SummaryTable" msprop:Generator_RowChangingName="SummaryTableRowChanging" msprop:Generator_RowEvHandlerName="SummaryTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SummaryTableRowDeleted" msprop:Generator_RowEvArgName="SummaryTableRowChangeEvent" msprop:Generator_RowChangedName="SummaryTableRowChanged" msprop:Generator_RowClassName="SummaryTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirstCA" msprop:Generator_ColumnVarNameInTable="columnFirstCA" msprop:Generator_ColumnPropNameInRow="FirstCA" msprop:Generator_ColumnPropNameInTable="FirstCAColumn" msprop:Generator_UserColumnName="FirstCA" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondCA" msprop:Generator_ColumnVarNameInTable="columnSecondCA" msprop:Generator_ColumnPropNameInRow="SecondCA" msprop:Generator_ColumnPropNameInTable="SecondCAColumn" msprop:Generator_UserColumnName="SecondCA" type="xs:string" minOccurs="0" />
+              <xs:element name="ThirdCA" msprop:Generator_ColumnVarNameInTable="columnThirdCA" msprop:Generator_ColumnPropNameInRow="ThirdCA" msprop:Generator_ColumnPropNameInTable="ThirdCAColumn" msprop:Generator_UserColumnName="ThirdCA" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalCA" msprop:Generator_ColumnVarNameInTable="columnTotalCA" msprop:Generator_ColumnPropNameInRow="TotalCA" msprop:Generator_ColumnPropNameInTable="TotalCAColumn" msprop:Generator_UserColumnName="TotalCA" type="xs:string" minOccurs="0" />
+              <xs:element name="Exam" msprop:Generator_ColumnVarNameInTable="columnExam" msprop:Generator_ColumnPropNameInRow="Exam" msprop:Generator_ColumnPropNameInTable="ExamColumn" msprop:Generator_UserColumnName="Exam" type="xs:string" minOccurs="0" />
+              <xs:element name="GrandTotal" msprop:Generator_ColumnVarNameInTable="columnGrandTotal" msprop:Generator_ColumnPropNameInRow="GrandTotal" msprop:Generator_ColumnPropNameInTable="GrandTotalColumn" msprop:Generator_UserColumnName="GrandTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

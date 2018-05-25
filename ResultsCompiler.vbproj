@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{38DA4FC3-369D-499A-9EB4-A84C87F882A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ResultsCompiler</RootNamespace>
+    <AssemblyName>ResultsCompiler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ResultsCompiler.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>ResultsCompiler.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdmissionsOfficer\InstructorRegistration.aspx" />
+    <Content Include="AdmissionsOfficer\loadphoto.aspx" />
+    <Content Include="AdmissionsOfficer\StudentRegistration.aspx" />
+    <Content Include="ExamsOfficer\Allocations.aspx" />
+    <Content Include="ExamsOfficer\GradesPage.aspx" />
+    <Content Include="FormMaster\PerformanceStat.aspx" />
+    <Content Include="FormMaster\PSDisposition.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Acc.png" />
+    <Content Include="Images\BackGround.png" />
+    <Content Include="Images\Grades.png" />
+    <Content Include="Images\Header.png" />
+    <Content Include="Images\k6689060.jpg" />
+    <Content Include="Images\k9837864.jpg" />
+    <Content Include="Images\mk.jpg" />
+    <Content Include="Images\NCC.bmp" />
+    <Content Include="Images\PN.bmp" />
+    <Content Include="Images\Regis.png" />
+    <Content Include="Images\Staff.png" />
+    <Content Include="Images\Sunset.jpg" />
+    <Content Include="Images\th.jpg" />
+    <Content Include="Images\th1.jpg" />
+    <Content Include="Images\Untitled-1.png" />
+    <Content Include="InstructorFolder\CognitiveRecord.aspx" />
+    <Content Include="InstructorFolder\PerformancePage.aspx" />
+    <Content Include="myReports\Acc.png" />
+    <Content Include="myReports\k9837864.jpg" />
+    <Content Include="PrincipalFolder\Classes.aspx" />
+    <Content Include="PrincipalFolder\curriculum.aspx" />
+    <Content Include="PrincipalFolder\SessionsAndTerms.aspx" />
+    <Content Include="StudentFolder\BiodataPrint.aspx" />
+    <Content Include="StudentFolder\MyRegistration.aspx" />
+    <Content Include="StudentFolder\ReportCard.aspx" />
+    <Content Include="Styles\AssessmentPage.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\masterpage.css" />
+    <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="LoginPage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmissionsOfficer\Admissions.Master.designer.vb">
+      <DependentUpon>Admissions.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\Admissions.Master.vb">
+      <DependentUpon>Admissions.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\InstructorRegistration.aspx.designer.vb">
+      <DependentUpon>InstructorRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\InstructorRegistration.aspx.vb">
+      <DependentUpon>InstructorRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\loadphoto.aspx.designer.vb">
+      <DependentUpon>loadphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\loadphoto.aspx.vb">
+      <DependentUpon>loadphoto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\StudentRegistration.aspx.designer.vb">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdmissionsOfficer\StudentRegistration.aspx.vb">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Logic.vb" />
+    <Compile Include="Classes\FormMaster.vb" />
+    <Compile Include="Classes\PandADomain.vb" />
+    <Compile Include="Classes\AdmissionsOfficer.vb" />
+    <Compile Include="Classes\Report.vb" />
+    <Compile Include="Classes\SchoolPrincipal.vb" />
+    <Compile Include="Classes\Assessment.vb" />
+    <Compile Include="Classes\Instructor.vb" />
+    <Compile Include="Classes\Score.vb" />
+    <Compile Include="Classes\SessionInfoClass.vb" />
+    <Compile Include="Classes\Subject.vb" />
+    <Compile Include="Classes\Grade.vb" />
+    <Compile Include="Classes\Person.vb" />
+    <Compile Include="Classes\Student.vb" />
+    <Compile Include="Classes\Security.vb" />
+    <Compile Include="Classes\UserAccount.vb" />
+    <Compile Include="dsCognitive.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCognitive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPerf.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPerf.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPsych.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPsych.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsOfficer\Allocations.aspx.designer.vb">
+      <DependentUpon>Allocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsOfficer\Allocations.aspx.vb">
+      <DependentUpon>Allocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamsOfficer\ExamsOfficer.Master.designer.vb">
+      <DependentUpon>ExamsOfficer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsOfficer\ExamsOfficer.Master.vb">
+      <DependentUpon>ExamsOfficer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamsOfficer\GradesPage.aspx.designer.vb">
+      <DependentUpon>GradesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsOfficer\GradesPage.aspx.vb">
+      <DependentUpon>GradesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormMaster\PerformanceStat.aspx.designer.vb">
+      <DependentUpon>PerformanceStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\PerformanceStat.aspx.vb">
+      <DependentUpon>PerformanceStat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FormMaster\PSDisposition.aspx.designer.vb">
+      <DependentUpon>PSDisposition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\PSDisposition.aspx.vb">
+      <DependentUpon>PSDisposition.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorFolder\CognitiveRecord.aspx.designer.vb">
+      <DependentUpon>CognitiveRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorFolder\CognitiveRecord.aspx.vb">
+      <DependentUpon>CognitiveRecord.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="InstructorFolder\InstructorMaster.Master.designer.vb">
+      <DependentUpon>InstructorMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorFolder\InstructorMaster.Master.vb">
+      <DependentUpon>InstructorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InstructorFolder\PerformancePage.aspx.designer.vb">
+      <DependentUpon>PerformancePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorFolder\PerformancePage.aspx.vb">
+      <DependentUpon>PerformancePage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.vb">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.aspx.vb">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Positions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Positions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCredentials.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportCredentials.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalFolder\Classes.aspx.designer.vb">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalFolder\Classes.aspx.vb">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalFolder\curriculum.aspx.designer.vb">
+      <DependentUpon>curriculum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalFolder\curriculum.aspx.vb">
+      <DependentUpon>curriculum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalFolder\PrincipalPage.Master.designer.vb">
+      <DependentUpon>PrincipalPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalFolder\PrincipalPage.Master.vb">
+      <DependentUpon>PrincipalPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrincipalFolder\SessionsAndTerms.aspx.designer.vb">
+      <DependentUpon>SessionsAndTerms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalFolder\SessionsAndTerms.aspx.vb">
+      <DependentUpon>SessionsAndTerms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ReportsDatasets\dsAllocs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAllocs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsDatasets\dsAllocs.vb">
+      <DependentUpon>dsAllocs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResultsCompDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultsCompDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResultSummary.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResultSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\BiodataPrint.aspx.designer.vb">
+      <DependentUpon>BiodataPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\BiodataPrint.aspx.vb">
+      <DependentUpon>BiodataPrint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\MyRegistration.aspx.designer.vb">
+      <DependentUpon>MyRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\MyRegistration.aspx.vb">
+      <DependentUpon>MyRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\ReportCard.aspx.designer.vb">
+      <DependentUpon>ReportCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\ReportCard.aspx.vb">
+      <DependentUpon>ReportCard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StudentFolder\StudentsMaster.Master.designer.vb">
+      <DependentUpon>StudentsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFolder\StudentsMaster.Master.vb">
+      <DependentUpon>StudentsMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myReports\ReportCard.rdlc" />
+    <EmbeddedResource Include="myReports\rptPersonalInfo.rdlc" />
+    <EmbeddedResource Include="myReports\rptPerf.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdmissionsOfficer\Admissions.Master" />
+    <Content Include="ExamsOfficer\ExamsOfficer.Master" />
+    <Content Include="InstructorFolder\InstructorMaster.Master" />
+    <None Include="dsCognitive.xsc">
+      <DependentUpon>dsCognitive.xsd</DependentUpon>
+    </None>
+    <None Include="dsCognitive.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCognitive.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsCognitive.xss">
+      <DependentUpon>dsCognitive.xsd</DependentUpon>
+    </None>
+    <None Include="dsPerf.xsc">
+      <DependentUpon>dsPerf.xsd</DependentUpon>
+    </None>
+    <None Include="dsPerf.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPerf.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsPerf.xss">
+      <DependentUpon>dsPerf.xsd</DependentUpon>
+    </None>
+    <None Include="dsPsych.xsc">
+      <DependentUpon>dsPsych.xsd</DependentUpon>
+    </None>
+    <None Include="dsPsych.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPsych.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsPsych.xss">
+      <DependentUpon>dsPsych.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="PrincipalFolder\PrincipalPage.Master" />
+    <Content Include="StudentFolder\StudentsMaster.Master" />
+    <None Include="Positions.xsc">
+      <DependentUpon>Positions.xsd</DependentUpon>
+    </None>
+    <None Include="Positions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Positions.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Positions.xss">
+      <DependentUpon>Positions.xsd</DependentUpon>
+    </None>
+    <None Include="ReportCredentials.xsc">
+      <DependentUpon>ReportCredentials.xsd</DependentUpon>
+    </None>
+    <None Include="ReportCredentials.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportCredentials.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportCredentials.xss">
+      <DependentUpon>ReportCredentials.xsd</DependentUpon>
+    </None>
+    <None Include="ReportsDatasets\dsAllocs.xsc">
+      <DependentUpon>dsAllocs.xsd</DependentUpon>
+    </None>
+    <None Include="ReportsDatasets\dsAllocs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllocs.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportsDatasets\dsAllocs.xss">
+      <DependentUpon>dsAllocs.xsd</DependentUpon>
+    </None>
+    <None Include="ResultsCompDataSet.xsc">
+      <DependentUpon>ResultsCompDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResultsCompDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResultsCompDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResultsCompDataSet.xss">
+      <DependentUpon>ResultsCompDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResultSummary.xsc">
+      <DependentUpon>ResultSummary.xsd</DependentUpon>
+    </None>
+    <None Include="ResultSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResultSummary.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ResultSummary.xss">
+      <DependentUpon>ResultSummary.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
+    <Folder Include="TempFolder\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1042</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
